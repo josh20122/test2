@@ -11,5 +11,5 @@ class CartProduct extends Pivot
 
     protected $table = 'cart_product';
 
-    public $timestamps = false;
+    public $timestamps = true;
 }
