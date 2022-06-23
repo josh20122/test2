@@ -1,0 +1,719 @@
+"use strict";
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Seller_Application_vue"],{
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Seller/Application.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Seller/Application.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ["errors"],
+  methods: {
+    submit: function submit() {
+      var _this = this;
+
+      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_0__.Inertia.post("/seller/create", this.form, {
+        forceFormData: true,
+        preserveScroll: true,
+        preserveState: true,
+        onStart: function onStart() {
+          _this.processing = true;
+          _this.timeout = 100000;
+          _this.loading = true;
+          _this.color = "yellow darken-3";
+          _this.text = "  Processing ...";
+        },
+        onSuccess: function onSuccess() {
+          _this.timeout = 3000;
+          _this.color = "green darken-3";
+          _this.text = "Submitted successfully, Please check your email address  ";
+          _this.redirect = true;
+          _this.loading = false;
+        },
+        onError: function onError() {
+          _this.timeout = 2000;
+          _this.loading = false;
+          _this.color = "red darken-2";
+          _this.text = "Failed, please check for any errors";
+        }
+      });
+    }
+  },
+  data: function data() {
+    return {
+      required: [function (v) {
+        return !!v || "This field is required";
+      }],
+      content: null,
+      color: null,
+      timeout: null,
+      processing: null,
+      loading: false,
+      text: null,
+      redirect: false,
+      form: {
+        name: null,
+        description: null,
+        document: null,
+        sub_region: null,
+        region: null,
+        city: null,
+        passport: null,
+        email: null,
+        phone_number: null
+      }
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Seller/Application.vue":
+/*!***************************************************!*\
+  !*** ./resources/js/Pages/Seller/Application.vue ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Application_vue_vue_type_template_id_7b886809___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Application.vue?vue&type=template&id=7b886809& */ "./resources/js/Pages/Seller/Application.vue?vue&type=template&id=7b886809&");
+/* harmony import */ var _Application_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Application.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Seller/Application.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Application_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Application_vue_vue_type_template_id_7b886809___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Application_vue_vue_type_template_id_7b886809___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Seller/Application.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Seller/Application.vue?vue&type=script&lang=js&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/Pages/Seller/Application.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Application_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Application.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Seller/Application.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Application_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Seller/Application.vue?vue&type=template&id=7b886809&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/Pages/Seller/Application.vue?vue&type=template&id=7b886809& ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Application_vue_vue_type_template_id_7b886809___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Application_vue_vue_type_template_id_7b886809___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Application_vue_vue_type_template_id_7b886809___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Application.vue?vue&type=template&id=7b886809& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Seller/Application.vue?vue&type=template&id=7b886809&");
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Seller/Application.vue?vue&type=template&id=7b886809&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Seller/Application.vue?vue&type=template&id=7b886809& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-app",
+    [
+      _c(
+        "v-main",
+        [
+          _c(
+            "v-container",
+            {},
+            [
+              _c(
+                "v-row",
+                [
+                  _c(
+                    "v-col",
+                    [
+                      _c(
+                        "v-card",
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { "max-width": "500" },
+                        },
+                        [
+                          _c("v-card-title", [
+                            _vm._v("New Seller Application form"),
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "v-card-text",
+                            [
+                              _c(
+                                "v-form",
+                                [
+                                  _c(
+                                    "v-row",
+                                    { attrs: { dense: "" } },
+                                    [
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12" } },
+                                        [
+                                          _c("v-text-field", {
+                                            attrs: {
+                                              label: "Name of organisation",
+                                              outlined: "",
+                                              dense: "",
+                                              "error-messages": _vm.errors.name,
+                                              rules: _vm.required,
+                                            },
+                                            model: {
+                                              value: _vm.form.name,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.form, "name", $$v)
+                                              },
+                                              expression: "form.name",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12" } },
+                                        [
+                                          _c("v-text-field", {
+                                            attrs: {
+                                              label: "City",
+                                              outlined: "",
+                                              dense: "",
+                                              "error-messages": _vm.errors.city,
+                                              rules: _vm.required,
+                                            },
+                                            model: {
+                                              value: _vm.form.city,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.form, "city", $$v)
+                                              },
+                                              expression: "form.city",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12" } },
+                                        [
+                                          _c("v-text-field", {
+                                            attrs: {
+                                              label: "Region",
+                                              outlined: "",
+                                              dense: "",
+                                              "error-messages":
+                                                _vm.errors.region,
+                                              rules: _vm.required,
+                                            },
+                                            model: {
+                                              value: _vm.form.region,
+                                              callback: function ($$v) {
+                                                _vm.$set(
+                                                  _vm.form,
+                                                  "region",
+                                                  $$v
+                                                )
+                                              },
+                                              expression: "form.region",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12" } },
+                                        [
+                                          _c("v-text-field", {
+                                            attrs: {
+                                              label: "Sub Region",
+                                              outlined: "",
+                                              dense: "",
+                                              "error-messages":
+                                                _vm.errors.sub_region,
+                                              rules: _vm.required,
+                                            },
+                                            model: {
+                                              value: _vm.form.sub_region,
+                                              callback: function ($$v) {
+                                                _vm.$set(
+                                                  _vm.form,
+                                                  "sub_region",
+                                                  $$v
+                                                )
+                                              },
+                                              expression: "form.sub_region",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12" } },
+                                        [
+                                          _c("v-textarea", {
+                                            attrs: {
+                                              label: "Seller Description",
+                                              outlined: "",
+                                              dense: "",
+                                              "error-messages":
+                                                _vm.errors.description,
+                                              counter: "256",
+                                              rules: _vm.required,
+                                            },
+                                            model: {
+                                              value: _vm.form.description,
+                                              callback: function ($$v) {
+                                                _vm.$set(
+                                                  _vm.form,
+                                                  "description",
+                                                  $$v
+                                                )
+                                              },
+                                              expression: "form.description",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12" } },
+                                        [
+                                          _c("v-text-field", {
+                                            attrs: {
+                                              label: "Contact Email",
+                                              outlined: "",
+                                              dense: "",
+                                              "error-messages":
+                                                _vm.errors.email,
+                                              rules: _vm.required,
+                                            },
+                                            model: {
+                                              value: _vm.form.email,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.form, "email", $$v)
+                                              },
+                                              expression: "form.email",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12" } },
+                                        [
+                                          _c("v-text-field", {
+                                            attrs: {
+                                              label: "Contact Phone Number",
+                                              outlined: "",
+                                              dense: "",
+                                              "error-messages":
+                                                _vm.errors.phone_number,
+                                              rules: _vm.required,
+                                            },
+                                            model: {
+                                              value: _vm.form.phone_number,
+                                              callback: function ($$v) {
+                                                _vm.$set(
+                                                  _vm.form,
+                                                  "phone_number",
+                                                  $$v
+                                                )
+                                              },
+                                              expression: "form.phone_number",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12" } },
+                                        [
+                                          _c("v-file-input", {
+                                            attrs: {
+                                              label:
+                                                "Business Registration Document",
+                                              outlined: "",
+                                              dense: "",
+                                              "error-messages":
+                                                _vm.errors.document,
+                                              rules: _vm.required,
+                                            },
+                                            model: {
+                                              value: _vm.form.document,
+                                              callback: function ($$v) {
+                                                _vm.$set(
+                                                  _vm.form,
+                                                  "document",
+                                                  $$v
+                                                )
+                                              },
+                                              expression: "form.document",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12" } },
+                                        [
+                                          _c("v-file-input", {
+                                            attrs: {
+                                              label:
+                                                "Business Owner's Passport",
+                                              outlined: "",
+                                              dense: "",
+                                              "error-messages":
+                                                _vm.errors.passport,
+                                              rules: _vm.required,
+                                            },
+                                            model: {
+                                              value: _vm.form.passport,
+                                              callback: function ($$v) {
+                                                _vm.$set(
+                                                  _vm.form,
+                                                  "passport",
+                                                  $$v
+                                                )
+                                              },
+                                              expression: "form.passport",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12" } },
+                                        [
+                                          _c("v-checkbox", {
+                                            scopedSlots: _vm._u([
+                                              {
+                                                key: "label",
+                                                fn: function () {
+                                                  return [
+                                                    _c(
+                                                      "div",
+                                                      [
+                                                        _vm._v(
+                                                          "\n                          Have read and understood Our\n                          "
+                                                        ),
+                                                        _c(
+                                                          "Link",
+                                                          {
+                                                            attrs: {
+                                                              href: "/terms",
+                                                            },
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "Terms & Condintions"
+                                                            ),
+                                                          ]
+                                                        ),
+                                                      ],
+                                                      1
+                                                    ),
+                                                  ]
+                                                },
+                                                proxy: true,
+                                              },
+                                            ]),
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12" } },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              staticClass: "white--text",
+                                              attrs: {
+                                                elevation: "",
+                                                color: "indigo",
+                                                block: "",
+                                              },
+                                              on: { click: _vm.submit },
+                                            },
+                                            [_vm._v("submit")]
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ],
+                    1
+                  ),
+                ],
+                1
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-snackbar",
+            {
+              staticClass: "white--text",
+              attrs: {
+                timeout: _vm.timeout,
+                color: _vm.color,
+                tile: "",
+                absolute: "",
+                right: "",
+                transition: "slide-x-reverse-transition",
+              },
+              model: {
+                value: _vm.processing,
+                callback: function ($$v) {
+                  _vm.processing = $$v
+                },
+                expression: "processing",
+              },
+            },
+            [
+              _c("div", {
+                staticClass: "font-sembold text-lg",
+                domProps: { textContent: _vm._s(_vm.text) },
+              }),
+            ]
+          ),
+        ],
+        1
+      ),
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);
